@@ -1,4 +1,6 @@
 %Simulación 1
+%?	Se verifican los movimientos de las articulaciones
+%?	Y la posición de los sistemas de referencia
 clc; close all; clear all;
 parametros
 for i=0:10:360
