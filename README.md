@@ -9,7 +9,9 @@
 
 ## Expresión de Cinemática Directa [(Simulación 1)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion1.m).
 
-<img src="/Imagenes/PosiciónHome.png" width="560" height="420">
+<img src="https://media.giphy.com/media/QSSbQwaM9npmFEg6op/giphy.gif" width="560" height="420">
+
+
 
 ## Expresión de Cinemática Inversa [(Simulación 2)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion2.m).
 
