@@ -12,7 +12,7 @@ S34=DHC(-pi/2,0,q4,l3);
 S45=DHC(pi/2,0,q5,0);
 S56=DHC(-pi/2,0,q6,0);
 S67=DHC(0,0,0,l4);
-%CINEM罷ICA DIRECTA
+%CINEM脕TICA DIRECTA
 CD=S01*S12*S23*S34*S45*S56*S67;
 simplify(CD);
 
@@ -20,14 +20,14 @@ simplify(CD);
 %x=[xe,ye,ze,alfa,betha,gamma];
 syms xe ye ze alfa betha gamma
  
-%CINEM罷ICA INVERSA
-%P07 -> Vector de posici髇 que va de 0 a 7
+%CINEM脕TICA INVERSA
+%P07 -> Vector de posici贸n que va de 0 a 7
 P07=transl(xe,ye,ze)*rotz(gamma)*roty(betha)*roty(alfa);
 %CD=P07;
 %0=CD-P07
 ECU=CD-P07;
  
-%Extracci髇 de la matriz homogenea
+%Extracci贸n de la matriz homogenea
 %Contiene las variables articulares (q1,q2,...,q6)
 %y las coordenadas del efector final (xe,ye,ze)
  
@@ -46,9 +46,9 @@ ecu10=ECU(3,2);
 ecu11=ECU(3,3);
 ecu12=ECU(3,4);
 
-%%%%%%%% Modelo cinem醫ico diferencial %%%%%%%%%
+%%%%%%%% Modelo cinem谩tico diferencial %%%%%%%%%
  
-%Submatriz de rotaci髇
+%Submatriz de rotaci贸n
 R01=S01(1:3,1:3);
 R12=S12(1:3,1:3);
 R23=S23(1:3,1:3);
@@ -57,7 +57,7 @@ R45=S34(1:3,1:3);
 R56=S34(1:3,1:3);
 R67=S34(1:3,1:3);
  
-% %Vector de posici髇 (px,py, pz)
+% %Vector de posici贸n (px,py, pz)
 P01=S01(1:3,4);
 P12=S12(1:3,4);
 P23=S23(1:3,4);
@@ -109,14 +109,14 @@ v77=transpose(R67)*(v66+cross(w66,P67));
 %velocidad angular 7 vista desde el sistema 7
 w77=transpose(R67)*w66+0*Z;
  
-% % C醠culo del jacobiano
+% % C谩lculo del jacobiano
 % % el numero de columnas es igual al numero de motores del robot
-J77=[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(v77(1),q5p) diff(v66(1),q6p);...
-     diff(v77(2),q1p) diff(v77(2),q2p) diff(v77(2),q3p) diff(v77(2),q4p) diff(v77(2),q5p) diff(v66(2),q6p);...
-     diff(v77(3),q1p) diff(v77(3),q2p) diff(v77(3),q3p) diff(v77(3),q4p) diff(v77(3),q5p) diff(v66(3),q6p);...    
-     diff(w77(1),q1p) diff(w77(1),q2p) diff(w77(1),q3p) diff(w77(1),q4p) diff(w77(1),q5p) diff(w66(1),q6p);...
-     diff(w77(2),q1p) diff(w77(2),q2p) diff(w77(2),q3p) diff(w77(2),q4p) diff(w77(2),q5p) diff(w66(2),q6p);...
-     diff(w77(3),q1p) diff(w77(3),q2p) diff(w77(3),q3p) diff(w77(3),q4p) diff(w77(3),q5p) diff(w66(3),q6p)];
+J77=[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(v77(1),q5p) diff(v77(1),q6p);...
+     diff(v77(2),q1p) diff(v77(2),q2p) diff(v77(2),q3p) diff(v77(2),q4p) diff(v77(2),q5p) diff(v77(2),q6p);...
+     diff(v77(3),q1p) diff(v77(3),q2p) diff(v77(3),q3p) diff(v77(3),q4p) diff(v77(3),q5p) diff(v77(3),q6p);...    
+     diff(w77(1),q1p) diff(w77(1),q2p) diff(w77(1),q3p) diff(w77(1),q4p) diff(w77(1),q5p) diff(w77(1),q6p);...
+     diff(w77(2),q1p) diff(w77(2),q2p) diff(w77(2),q3p) diff(w77(2),q4p) diff(w77(2),q5p) diff(w77(2),q6p);...
+     diff(w77(3),q1p) diff(w77(3),q2p) diff(w77(3),q3p) diff(w77(3),q4p) diff(w77(3),q5p) diff(w77(3),q6p)];
        
  simplify(J77);
 
@@ -131,13 +131,13 @@ inv(J77)*x77p;
 % syms xe44p ye44p ze44p
 % x77p=[xe44p;ye44p;ze44p];%velocidad cartesiana del efector final
  
-%El rango determina el n鷐ero de renglones y columnas linealmente 
+%El rango determina el n煤mero de renglones y columnas linealmente 
 %independientes.
 rank(J77)
-%Linealmente independientes -> Una ecuaci髇 no se puede deducir a partir 
+%Linealmente independientes -> Una ecuaci贸n no se puede deducir a partir 
 %de otras
  
-%Si hay una ecuaci髇 dependiente, significa que un grado de libertad se 
+%Si hay una ecuaci贸n dependiente, significa que un grado de libertad se 
 %pierde, es decir, se pierde un motor, lo cual implica que la matriz sea 
 %singular (se atora el motor o demanda mucha potencia), por que el robot
 %se vuelve incontrolable
