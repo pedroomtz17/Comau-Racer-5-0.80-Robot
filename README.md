@@ -20,7 +20,11 @@
 <img src="/Imagenes/simulacion2.png" width="440" height="300">
 <img src="/Imagenes/simulacion2.1.png" width="440" height="300">
 
+- Trayectoria [(Simulación 3)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion3.m).
+<img src="/Imagenes/simulacion3.png" width="440" height="300">
+
 ## Graficas de posición de las juntas.
+<img src="/Imagenes/EspacioJuntas.png" width="440" height="300">
 
 ## Jacobiano por el método de propagación de velocidades
 
