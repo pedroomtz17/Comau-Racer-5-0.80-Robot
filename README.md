@@ -5,15 +5,25 @@
 
 ## Parámetros Denavit-Hartenberg 
 
-![The San Juan Mountains are beautiful!](/Imagenes/Denavit-Hartenberg.PNG)
+<img src="/Imagenes/Denavit-Hartenberg.PNG" width="561" height="385">
 
-## Expresión de cinemática directa [(Simulación 1)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion1.m).
-![The San Juan Mountains are beautiful!](/Imagenes/PosiciónHome.png)
+## Expresión de Cinemática Directa [(Simulación 1)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion1.m).
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+<img src="/Imagenes/PosiciónHome.png" width="560" height="420">
+
+## Expresión de Cinemática Inversa [(Simulación 2)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion2.m).
+
+
+- Solución inicial (un solo punto para el efector)
+<img src="/Imagenes/simulacion2.png" width="440" height="300">
+<img src="/Imagenes/simulacion2.1.png" width="440" height="300">
+
+## Graficas de posición de las juntas.
+
+## Jacobiano por el método de propagación de velocidades
+
+## Determinante y singularidades
+
+## Trayectoria de perfil quintico
 
 
