@@ -27,14 +27,14 @@ plot3(x,y,z,'color','#7E2F8E','linewidth',4)
 hold on
 %Sistemas de referencia
 frame(eye(4),'r',0.2)
-frame(S01,'r',0.2)
-frame(S02,'g',0.2)
-frame(S03,'b',0.2)
-frame(S04,'r',0.2)
-frame(S05,'g',0.2)
-frame(S06,'b',0.2)
+% frame(S01,'r',0.2)
+% frame(S02,'g',0.2)
+% frame(S03,'b',0.2)
+% frame(S04,'r',0.2)
+% frame(S05,'g',0.2)
+% frame(S06,'b',0.2)
 frame(S07,'c',0.2)
 
-axis([-1 1 -1 1 -1 1])
+axis([-0.7 1 -0.5 1 -1 1])
 grid on
 end
