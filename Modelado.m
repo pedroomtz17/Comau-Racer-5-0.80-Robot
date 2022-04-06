@@ -22,7 +22,7 @@ syms xe ye ze alfa betha gamma
  
 %CINEMÁTICA INVERSA
 %P07 -> Vector de posición que va de 0 a 7
-P07=transl(xe,ye,ze)*rotz(gamma)*roty(betha)*roty(alfa);
+P07=transl(xe,ye,ze)*rotz(gamma)*roty(betha)*rotx(alfa);
 %CD=P07;
 %0=CD-P07
 ECU=CD-P07;
