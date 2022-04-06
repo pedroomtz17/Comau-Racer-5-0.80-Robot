@@ -144,13 +144,13 @@ rank(J77);
  
 % Calculo del determinante
  
-DETJ77=det(J77);
-simplify(DETJ77);
+DETJ77=simplify(det(J77))
 
 % Cinematica directa para el espacio de trabajo
-x=CD(1,4)
-y=CD(2,4)
-z=CD(3,4)
+x=CD(1,4);
+y=CD(2,4);
+z=CD(3,4);
+
 
 
 

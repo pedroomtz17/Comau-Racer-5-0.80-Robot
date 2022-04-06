@@ -10,7 +10,7 @@ parametros
 % 4.-Dibujar la nube de puntos
  
 tic
-inc=50;
+inc=35;
 c=1;
  
 for Q1=0:inc:360 
