@@ -22,7 +22,7 @@ syms xe ye ze alfa betha gamma
  
 %CINEM√?TICA INVERSA
 %P07 -> Vector de posici√≥n que va de 0 a 7
-P07=transl(xe,ye,ze)*rotz(gamma)*roty(betha)*roty(alfa);
+P07=transl(xe,ye,ze)*rotz(gamma)*roty(betha)*rotx(alfa);
 %CD=P07;
 %0=CD-P07
 ECU=CD-P07;
