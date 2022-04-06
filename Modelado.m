@@ -12,7 +12,7 @@ S34=DHC(-pi/2,0,q4,l3);
 S45=DHC(pi/2,0,q5,0);
 S56=DHC(-pi/2,0,q6,0);
 S67=DHC(0,0,0,l4);
-%CINEMÁTICA DIRECTA
+%CINEM�?TICA DIRECTA
 CD=S01*S12*S23*S34*S45*S56*S67;
 simplify(CD);
 
@@ -20,7 +20,7 @@ simplify(CD);
 %x=[xe,ye,ze,alfa,betha,gamma];
 syms xe ye ze alfa betha gamma
  
-%CINEMÁTICA INVERSA
+%CINEM�?TICA INVERSA
 %P07 -> Vector de posición que va de 0 a 7
 P07=transl(xe,ye,ze)*rotz(gamma)*roty(betha)*roty(alfa);
 %CD=P07;
@@ -120,20 +120,20 @@ J77=[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(v7
        
  simplify(J77);
 
-%Velocidad directa
-qp=[q1p;q2p;q3p;q4p;q5p;q6p]; %Velocidades articulares
-x77p=J77*qp;  %velocidad cartesiana relativa del efector final
-%    6x6 6x1 =6x1
+% %Velocidad directa
+% qp=[q1p;q2p;q3p;q4p;q5p;q6p]; %Velocidades articulares
+% x77p=J77*qp;  %velocidad cartesiana relativa del efector final
+% %    6x6 6x1 =6x1
  
 % Velocidad inversa 
-inv(J77)*x77p;
+% inv(J77)*x77p;
  
 % syms xe44p ye44p ze44p
 % x77p=[xe44p;ye44p;ze44p];%velocidad cartesiana del efector final
  
 %El rango determina el número de renglones y columnas linealmente 
 %independientes.
-rank(J77)
+rank(J77);
 %Linealmente independientes -> Una ecuación no se puede deducir a partir 
 %de otras
  
@@ -142,16 +142,16 @@ rank(J77)
 %singular (se atora el motor o demanda mucha potencia), por que el robot
 %se vuelve incontrolable
  
-% R04=R01*R12*R23*R34;
-% v04=R04*v44;%velocidad lineal absoluta
-% w04=R04*w44;%velocidad angular absoluta
-%     %3x3 3x1 = 3x1
-%  
-% %Jacobiano absoluto
-% J04=[diff(v04(1),q1p) diff(v04(1),q2p) diff(v04(1),q3p);...
-%      diff(v04(2),q1p) diff(v04(2),q2p) diff(v04(2),q3p);...
-%      diff(v04(3),q1p) diff(v04(3),q2p) diff(v04(3),q3p);...
-%      diff(w04(1),q1p) diff(w04(1),q2p) diff(w04(1),q3p);...
-%      diff(w04(2),q1p) diff(w04(2),q2p) diff(w04(2),q3p);...
-%      diff(w04(3),q1p) diff(w04(3),q2p) diff(w04(3),q3p)]
+% Calculo del determinante
+ 
+DETJ77=det(J77);
+simplify(DETJ77)
+
+% Cinematica directa para el espacio de trabajo
+x=CD(1,4)
+y=CD(2,4)
+z=CD(3,4)
+
+
+
 
