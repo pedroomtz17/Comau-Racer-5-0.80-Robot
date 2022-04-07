@@ -20,6 +20,7 @@ for i=0:10:360
   q=fsolve(@c_inv,q0);
   q1(c)=q(1); q2(c)=q(2); q3(c)=q(3); 
   q4(c)=q(4); q5(c)=q(5); q6(c)=q(6);
+  DET(c)=-l2*l3*cos(q(3))*sin(q(5))*(l3*cos(q(2) + q(3)) + l2*sin(q(2)));
   robot(q(1),q(2),q(3),q(4),q(5),q(6))
   hold on
   plot3(x,y,z,'b*')
@@ -42,3 +43,9 @@ plot(t,rad2deg(q3),'bd');
 plot(t,rad2deg(q4),'r*');
 plot(t,rad2deg(q5),'g*');
 plot(t,rad2deg(q6),'b*');
+
+figure(3)
+plot(DET)
+title('Determinante');
+grid on
+
