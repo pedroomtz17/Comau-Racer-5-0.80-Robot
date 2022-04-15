@@ -109,7 +109,7 @@ v77=transpose(R67)*(v66+cross(w66,P67));
 %velocidad angular 7 vista desde el sistema 7
 w77=transpose(R67)*w66+0*Z;
  
-% % Cálculo del jacobiano
+% % Calculo del jacobiano
 % % el numero de columnas es igual al numero de motores del robot
 J77=[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(v77(1),q5p) diff(v77(1),q6p);...
      diff(v77(2),q1p) diff(v77(2),q2p) diff(v77(2),q3p) diff(v77(2),q4p) diff(v77(2),q5p) diff(v77(2),q6p);...
@@ -118,7 +118,8 @@ J77=[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(v7
      diff(w77(2),q1p) diff(w77(2),q2p) diff(w77(2),q3p) diff(w77(2),q4p) diff(w77(2),q5p) diff(w77(2),q6p);...
      diff(w77(3),q1p) diff(w77(3),q2p) diff(w77(3),q3p) diff(w77(3),q4p) diff(w77(3),q5p) diff(w77(3),q6p)];
        
- simplify(J77);
+ simplify(J77)
+ simplify(inv(J77));
 
 % %Velocidad directa
 % qp=[q1p;q2p;q3p;q4p;q5p;q6p]; %Velocidades articulares
@@ -131,20 +132,20 @@ J77=[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(v7
 % syms xe44p ye44p ze44p
 % x77p=[xe44p;ye44p;ze44p];%velocidad cartesiana del efector final
  
-%El rango determina el número de renglones y columnas linealmente 
+%El rango determina el numero de renglones y columnas linealmente 
 %independientes.
 rank(J77);
-%Linealmente independientes -> Una ecuación no se puede deducir a partir 
+%Linealmente independientes -> Una ecuacion no se puede deducir a partir 
 %de otras
  
-%Si hay una ecuación dependiente, significa que un grado de libertad se 
+%Si hay una ecuacion dependiente, significa que un grado de libertad se 
 %pierde, es decir, se pierde un motor, lo cual implica que la matriz sea 
 %singular (se atora el motor o demanda mucha potencia), por que el robot
 %se vuelve incontrolable
  
 % Calculo del determinante
  
-DETJ77=simplify(det(J77))
+DETJ77=simplify(det(J77));
 
 % Cinematica directa para el espacio de trabajo
 x=CD(1,4);
