@@ -46,6 +46,7 @@ ecu10=ECU(3,2);
 ecu11=ECU(3,3);
 ecu12=ECU(3,4);
 
+%% 
 %%%%%%%% Modelo cinemático diferencial %%%%%%%%%
  
 %Submatriz de rotación
@@ -118,11 +119,11 @@ J77=[diff(v77(1),q1p) diff(v77(1),q2p) diff(v77(1),q3p) diff(v77(1),q4p) diff(v7
      diff(w77(2),q1p) diff(w77(2),q2p) diff(w77(2),q3p) diff(w77(2),q4p) diff(w77(2),q5p) diff(w77(2),q6p);...
      diff(w77(3),q1p) diff(w77(3),q2p) diff(w77(3),q3p) diff(w77(3),q4p) diff(w77(3),q5p) diff(w77(3),q6p)];
        
- simplify(J77)
- simplify(inv(J77));
+simplify(J77);
+simplify(inv(J77));
 
 % %Velocidad directa
-% qp=[q1p;q2p;q3p;q4p;q5p;q6p]; %Velocidades articulares
+qp=[q1p;q2p;q3p;q4p;q5p;q6p]; %Velocidades articulares
 % x77p=J77*qp;  %velocidad cartesiana relativa del efector final
 % %    6x6 6x1 =6x1
  
@@ -143,6 +144,7 @@ rank(J77);
 %singular (se atora el motor o demanda mucha potencia), por que el robot
 %se vuelve incontrolable
  
+%% 
 % Calculo del determinante
  
 DETJ77=simplify(det(J77));
@@ -151,6 +153,10 @@ DETJ77=simplify(det(J77));
 x=CD(1,4);
 y=CD(2,4);
 z=CD(3,4);
+
+%% Calculo de la aceleracion
+q=[q1;q2;q3;q4;q5;q6];
+J77p=diff_matrix(J77,qp,q)
 
 
 
