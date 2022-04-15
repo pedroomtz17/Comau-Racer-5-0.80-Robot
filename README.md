@@ -22,8 +22,10 @@
 
 - Trayectoria [(Simulación 3)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion3.m).
 <img src="/Imagenes/simulacion3.png" width="440" height="300">
+<img src="/Imagenes/DeterminanteTrayectoriaSimu3.png" width="440" height="300">
 
-## Graficas de posición de las juntas.
+## Graficas de posición de las juntas
+
 <img src="/Imagenes/EspacioJuntas.png" width="440" height="300">
 
 ## Jacobiano por el método de propagación de velocidades
@@ -62,9 +64,13 @@ DETJ77 =
  
 -l2*l3*cos(q3)*sin(q5)*(l3*cos(q2 + q3) + l2*sin(q2))
 ```
+<img src="/Imagenes/Singularidad1.png">
+
 Ejemplo
 
 <img src="https://media.giphy.com/media/9bHYg9AnFBFHK77det/giphy.gif" width="560" height="420">
+<img src="/Imagenes/Singularidad.png" width="440" height="300">
+
 ## Trayectoria de perfil quintico
 
 
