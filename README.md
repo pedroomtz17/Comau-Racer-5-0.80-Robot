@@ -62,6 +62,9 @@ DETJ77 =
  
 -l2*l3*cos(q3)*sin(q5)*(l3*cos(q2 + q3) + l2*sin(q2))
 ```
+Ejemplo
+
+<img src="https://media.giphy.com/media/9bHYg9AnFBFHK77det/giphy.gif" width="560" height="420">
 ## Trayectoria de perfil quintico
 
 
