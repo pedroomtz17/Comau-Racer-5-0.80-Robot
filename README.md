@@ -64,6 +64,7 @@ DETJ77 =
  
 -l2*l3*cos(q3)*sin(q5)*(l3*cos(q2 + q3) + l2*sin(q2))
 ```
+Las singularidades se presentan en los siguientes casos:
 <img src="/Imagenes/Singularidad1.png">
 
 Ejemplo
