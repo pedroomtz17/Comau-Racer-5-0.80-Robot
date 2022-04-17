@@ -15,9 +15,6 @@ for i=0:10:360
   alfa=0;
   betha=-pi/6;
   gamma=0;
-  alfa=0;
-  betha=-pi/6;
-  gamma=0;
   x(c)=xe; y(c)=ye; z(c)=ze;
   q=fsolve(@c_inv,q0);
   q1(c)=q(1); q2(c)=q(2); q3(c)=q(3); 

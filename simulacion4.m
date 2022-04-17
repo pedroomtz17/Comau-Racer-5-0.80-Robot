@@ -11,8 +11,8 @@ tf=10; % tiempo final de la trayetoria
 c=1;
 
 % Posiciones iniciales y finales
-pi=[0.6;0.4;0.3];
-pf=[0.4;0.6;0.7];
+pi=[0.35;0.35;0.3];
+pf=[0.46;0.5;0.5];
 
 %Orientaciones iniciales y finales
 ai=[deg2rad(-5);deg2rad(0);deg2rad(5)];
@@ -207,6 +207,7 @@ plot(time,rad2deg(q6),'b*');
 title('Espacio de juntas');
 xlabel('Pasos');
 ylabel('Grados');
+legend('q1p','q2p','q3p','q4p','q5p','q6p');
 grid on;
 
 figure(6)
