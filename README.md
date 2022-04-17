@@ -74,5 +74,32 @@ Ejemplo
 <img src="/Imagenes/Singularidad.png" width="440" height="300">
 
 ## Trayectoria de perfil quintico
+<img src="/Imagenes/TrayectoriaPQ.png" width="440" height="300">
 
+Posición Espacio Cartesiano
 
+<img src="/Imagenes/PosicionEspacioCartesiano.png" width="440" height="300">
+
+Velocidad Espacio Cartesiano
+
+<img src="/Imagenes/VelocidadEspacioCartersiano.png" width="440" height="300">
+
+Aceleración Espacio Cartesiano
+
+<img src="/Imagenes/AceleracionEspacioCartersiano.png" width="440" height="300">
+
+Espacio de Juntas
+
+<img src="/Imagenes/EspacioJuntas.png" width="440" height="300">
+
+Velocidad Articular
+
+<img src="/Imagenes/VelocidadArticular.png" width="440" height="300">
+
+Aceleración Articular
+
+<img src="/Imagenes/AceleracionArticular.png" width="440" height="300">
+
+Determinante
+
+<img src="/Imagenes/DeterminantePQ.png" width="440" height="300">
