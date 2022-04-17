@@ -21,7 +21,10 @@
 <img src="/Imagenes/simulacion2.1.png" width="440" height="300">
 
 - Trayectoria [(Simulación 3)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion3.m).
+<img src="https://media.giphy.com/media/KO5sEzf0Wgiia0SQMe/giphy.gif" width="560" height="420">
 <img src="/Imagenes/simulacion3.png" width="440" height="300">
+
+- Determinante
 <img src="/Imagenes/DeterminanteTrayectoriaSimu3.png" width="440" height="300">
 
 ## Graficas de posición de las juntas
@@ -74,32 +77,33 @@ Ejemplo
 <img src="/Imagenes/Singularidad.png" width="440" height="300">
 
 ## Trayectoria de perfil quintico
+<img src="https://media.giphy.com/media/bntAxkibYtJFUQXubP/giphy.gif" width="560" height="420">
 <img src="/Imagenes/TrayectoriaPQ.png" width="440" height="300">
 
-Posición Espacio Cartesiano
+- Posición Espacio Cartesiano
 
 <img src="/Imagenes/PosicionEspacioCartesiano.png" width="440" height="300">
 
-Velocidad Espacio Cartesiano
+- Velocidad Espacio Cartesiano
 
 <img src="/Imagenes/VelocidadEspacioCartersiano.png" width="440" height="300">
 
-Aceleración Espacio Cartesiano
+- Aceleración Espacio Cartesiano
 
 <img src="/Imagenes/AceleracionEspacioCartersiano.png" width="440" height="300">
 
-Espacio de Juntas
+- Espacio de Juntas
 
 <img src="/Imagenes/EspacioJuntas.png" width="440" height="300">
 
-Velocidad Articular
+- Velocidad Articular
 
 <img src="/Imagenes/VelocidadArticular.png" width="440" height="300">
 
-Aceleración Articular
+- Aceleración Articular
 
 <img src="/Imagenes/AceleracionArticular.png" width="440" height="300">
 
-Determinante
+- Determinante
 
 <img src="/Imagenes/DeterminantePQ.png" width="440" height="300">
