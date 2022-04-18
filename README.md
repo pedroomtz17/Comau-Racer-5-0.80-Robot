@@ -3,6 +3,32 @@
 
 [![N|Solid](https://media.giphy.com/media/zpuLFclMqtnc04zWSj/giphy.gif)](https://www.comau.com/en/competencies/robotics-automation/robot-team/racer-5-0-80/)
 
+## Tabla de Especificaciones
+
+| Métrica | Valor |
+| ------ | ------ |
+| Número de ejes | 6 |
+| Carga máxima en la muñeca | 5 Kg |
+| Alcance horizontal máximo (Radio) | 809 mm |
+| Torque en el eje 4 (Nm) | 8.83 Nm |
+| Torque en el eje 5 (Nm) | 8.83 Nm |
+| Torque en el eje 6 (Nm) | 4.91 Nm |
+| Carrera (velocidad) en el eje 1 | +/- 170° (360°/s) |
+| Carrera (velocidad) en el eje 2 | -95°/ +135° (300°/s) |
+| Carrera (velocidad) en el eje 3 | -155° / +90° (330°/s) |
+| Carrera (velocidad) en el eje 4 | +/- 210° (500°/s) |
+| Carrera (velocidad) en el eje 5 | +/- 125° (500°/s) |
+| Carrera (velocidad) en el eje 6 | +/- 2700° (800°/s) |
+| Repetibilidad (mm) | 0.03 mm |
+| Peso del robot (Kg) | 32 kg |
+| Clase de protección | IP54 |
+| Posición de montaje | Piso/techo/pared (permitido con limitaciones de carga útil) |
+| Áreas de operación A (mm) | 1124 mm |
+| Áreas de operación A (mm) | 809 mm |
+| Áreas de operación A (mm) | 8 mm |
+| Áreas de operación A (mm) | 708 mm |
+| Áreas de operación A (mm) | 286 mm |
+
 ## Parámetros Denavit-Hartenberg 
 
 <img src="/Imagenes/Denavit-Hartenberg.PNG" width="761" height="585">
