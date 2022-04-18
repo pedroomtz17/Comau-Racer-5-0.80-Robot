@@ -5,7 +5,7 @@
 
 ## Parámetros Denavit-Hartenberg 
 
-<img src="/Imagenes/Denavit-Hartenberg.PNG" width="561" height="385">
+<img src="/Imagenes/Denavit-Hartenberg.PNG" width="761" height="585">
 
 ## Expresión de Cinemática Directa [(Simulación 1)](https://github.com/pedroomtz17/Comau-Racer-5-0.80-Robot/blob/master/simulacion1.m).
 
