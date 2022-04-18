@@ -38,9 +38,11 @@ Aplicaciones
 - Dispensación
 
 Unidades de control
-- [RC1](https://www.comau.com/en/competencies/robotics-automation/controls-auxiliary-equipment/r1c/)
+- [R1C](https://www.comau.com/en/competencies/robotics-automation/controls-auxiliary-equipment/r1c/)
+<img src="/Imagenes/R1C.png">
 
-
+- [TP5](https://www.comau.com/en/competencies/robotics-automation/controls-auxiliary-equipment/teach-pendant/)
+<img src="/Imagenes/TP5.png">
 
 ## Parámetros Denavit-Hartenberg 
 
