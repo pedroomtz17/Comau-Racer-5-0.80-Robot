@@ -31,13 +31,13 @@
 
 -  [Plano](https://www.comau.com/wp-content/uploads/2021/06/Racer5-0.80-2D-PDF.pdf)
 
-Aplicaciones
+## Aplicaciones
 - Manejo
 - Montaje
 - Cuidado de la máquina
 - Dispensación
 
-Unidades de control
+## Unidades de control
 - [R1C](https://www.comau.com/en/competencies/robotics-automation/controls-auxiliary-equipment/r1c/)
 <img src="/Imagenes/R1C.png">
 
