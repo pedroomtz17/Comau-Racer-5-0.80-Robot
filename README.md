@@ -24,10 +24,10 @@
 | Clase de protección | IP54 |
 | Posición de montaje | Piso/techo/pared (permitido con limitaciones de carga útil) |
 | Áreas de operación A (mm) | 1124 mm |
-| Áreas de operación A (mm) | 809 mm |
-| Áreas de operación A (mm) | 8 mm |
-| Áreas de operación A (mm) | 708 mm |
-| Áreas de operación A (mm) | 286 mm |
+| Áreas de operación B (mm) | 809 mm |
+| Áreas de operación C (mm) | 8 mm |
+| Áreas de operación D (mm) | 708 mm |
+| Áreas de operación E (mm) | 286 mm |
 
 ## Parámetros Denavit-Hartenberg 
 
