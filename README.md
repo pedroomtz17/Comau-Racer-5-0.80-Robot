@@ -29,6 +29,8 @@
 | Áreas de operación D (mm) | 708 mm |
 | Áreas de operación E (mm) | 286 mm |
 
+-  [Plano](https://www.comau.com/wp-content/uploads/2021/06/Racer5-0.80-2D-PDF.pdf)
+
 ## Parámetros Denavit-Hartenberg 
 
 <img src="/Imagenes/Denavit-Hartenberg.PNG" width="761" height="585">
